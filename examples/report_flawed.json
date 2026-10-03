@@ -1,0 +1,13 @@
+{
+  "benchmark": "ExampleBench-Malay",
+  "metric": "accuracy",
+  "models": [
+    {"name": "Model A", "score": 0.8283, "n": 500},
+    {"name": "Model B", "score": 0.8071, "n": 500}
+  ],
+  "runs": [{"seed": 1, "score": 0.8283}],
+  "claims": [
+    "Model A outperforms Model B on ExampleBench."
+  ],
+  "notes": "Deliberately incomplete: no intervals, one seed, no item-level data."
+}

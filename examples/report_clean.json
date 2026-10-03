@@ -1,0 +1,20 @@
+{
+  "benchmark": "ExampleBench-Malay",
+  "metric": "accuracy",
+  "harness": "lm-eval-style; chat template; reasoning off; greedy; scorer v1.2; full 24,213-item set",
+  "models": [
+    {"name": "Model A", "score": 0.828, "n": 24213, "ci": [0.823, 0.833]},
+    {"name": "Model B", "score": 0.807, "n": 24213, "ci": [0.802, 0.812]}
+  ],
+  "runs": [
+    {"seed": 1, "score": 0.8281},
+    {"seed": 2, "score": 0.8265},
+    {"seed": 3, "score": 0.8273}
+  ],
+  "seed_spread": {"n": 3, "mean": 0.8273, "sd": 0.0008, "range": 0.0016},
+  "item_leverage": {"max_abs_points": 0.9, "note": "single item moves the score by <1 pt"},
+  "claims": [
+    "Model A scores 82.8 and Model B 80.7 on the full set; the 95% intervals do not overlap."
+  ],
+  "notes": "Complete: interval, n, three seeds, item-level leverage and the protocol are all stated."
+}

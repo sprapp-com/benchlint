@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benchlint"
+version = "0.1.0"
+description = "Benchmark reporting hygiene: a linter and reliability toolkit. Stdlib only."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+keywords = ["benchmark", "evaluation", "reliability", "statistics", "llm"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/sprapp-com/benchlint"
+
+[project.scripts]
+benchlint = "benchlint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
